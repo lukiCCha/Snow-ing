@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;  
+  background: linear-gradient(to top,#00003d,#00002e,black, black);
+}
+
+.rain{
+  position: fixed;
+  top: -5vh;
+  transform: translateY(0);
+  animation: fall 3s linear;
+  color: #fff;
+  font-size: 22px;
+}
+
+@keyframes fall{
+  to{
+    transform: translateY(105vh);
+  }
+}
+
+#sun{
+  display: none;
+  position: fixed;
+  top: 60px;
+  right: 60px;
+  color: #FFD700;
+  font-size: 90px;
+  text-shadow: -15px 20px 100px black;
+  cursor: pointer;
+}
+
+#moon{
+  position: fixed;
+  top: 60px;
+  right: 60px;
+  color: #fff;
+  font-size: 90px;
+  text-shadow: -10px 20px 100px white;
+  cursor: pointer;
+}
